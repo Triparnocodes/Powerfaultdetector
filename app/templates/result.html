@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+<style>
+body { background:#111; color:white; text-align:center; padding-top:50px; font-family:Arial; }
+.box{background:#222;padding:20px;border-radius:10px;width:50%;margin:auto;}
+button{ padding:10px 20px;background:#1e90ff;border:none;color:white;border-radius:6px;cursor:pointer;}
+a{text-decoration:none;}
+</style>
+</head>
+<body>
+
+<div class="box">
+<h2>🔍 Fault Diagnosis Result</h2>
+<p><strong>Current:</strong> {{ current }} A</p>
+<p><strong>Phase Voltage:</strong> {{ phase_voltage }} V</p>
+<p><strong>Line Voltage:</strong> {{ line_voltage }} V</p>
+
+<h1 style="color:#00ffea;margin-top:20px">{{ result }}</h1>
+
+<br>
+<a href="/"><button>Test Another</button></a>
+</div>
+
+</body>
+</html>
